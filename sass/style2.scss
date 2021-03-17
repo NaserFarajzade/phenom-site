@@ -4,73 +4,105 @@
 /* Style the active/current link */
 /* Display some links to the right */
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
-#navbar {
-	overflow: hidden;
-	background-color: #f1f1f100;
-	padding: 50px 50px;
-	transition: 0.4s;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 99;
-	#navbar-right {
-		float: right;
-		margin-top: 3%;
-		// display:inline-block;
-		&:hover {
-			// background-color: #ddd;
-			color: rgb(12, 196, 187);
-		}
 
-		.nav-right-items {
-			border-radius: 4px;
-			line-height: 25px;
-			font-size: 18px;
-			text-decoration: none;
-			padding: 12px;
-			text-align: center;
-			color: rgb(0, 255, 255);
-		}
-		.nav-right-items-actived {
-			background-color: rgb(185, 80, 38);
-			color: white;
+//-----------------------------------
+// #navbar {
+// 	overflow: hidden;
+// 	background-color: #f1f1f100;
+// 	padding: 50px 50px;
+// 	transition: 0.4s;
+// 	position: fixed;
+// 	width: 100%;
+// 	top: 0;
+// 	z-index: 99;
+// 	#navbar-right {
+// 		float: right;
+// 		margin-top: 3%;
+// 		// display:inline-block;
+// 		&:hover {
+// 			// background-color: #ddd;
+// 			color: rgb(12, 196, 187);
+// 		}
+
+// 		.nav-right-items {
+// 			border-radius: 4px;
+// 			line-height: 25px;
+// 			font-size: 18px;
+// 			text-decoration: none;
+// 			padding: 12px;
+// 			text-align: center;
+// 			color: rgb(0, 255, 255);
+// 		}
+// 		.nav-right-items-actived {
+// 			background-color: rgb(185, 80, 38);
+// 			color: white;
+// 		}
+// 	}
+
+// 	#menu-in-small {
+// 		display: none;
+// 		background-color: lawngreen;
+// 		float: right;
+// 		margin-top: 3%;
+// 		border-radius: 4px;
+// 		line-height: 25px;
+// 		font-size: 18px;
+// 		text-decoration: none;
+// 		padding: 12px;
+// 		text-align: center;
+// 		color: rgb(0, 255, 255);
+// 	}
+// 	#logo {
+// 		font-size: 35px;
+// 		font-weight: bold;
+// 		transition: 0.4s;
+// 		display: contents;
+// 		img {
+// 			width: 20%;
+// 			float: left;
+// 		}
+// 	}
+// }
+
+// @media screen and (max-width: 580px) {
+// 	#navbar {
+// 		padding: 20px 10px !important;
+// 	}
+// 	#navbar-right {
+// 		display: none !important;
+// 	}
+// 	#menu-in-small {
+// 		display: inline;
+// 	}
+// }
+
+//--------------------------------
+
+#mainNav {
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	background-color: #021529c0;
+
+	@media (min-width: 992px) {
+		.navbar-expand-lg {
+			flex-flow: row nowrap;
+			justify-content: flex-start;
 		}
 	}
 
-	#menu-in-small {
-		display: none;
-		background-color: lawngreen;
-		float: right;
-		margin-top: 3%;
-		border-radius: 4px;
-		line-height: 25px;
-		font-size: 18px;
-		text-decoration: none;
-		padding: 12px;
-		text-align: center;
-		color: rgb(0, 255, 255);
+	.fixed-top {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
 	}
-	#logo {
-		font-size: 35px;
-		font-weight: bold;
-		transition: 0.4s;
-		display: contents;
-		img {
-			width: 20%;
-			float: left;
-		}
-	}
-}
 
-@media screen and (max-width: 580px) {
-	#navbar {
-		padding: 20px 10px !important;
-	}
-	#navbar-right {
-		display: none !important;
-	}
-	#menu-in-small {
-		display: inline;
+	#logo-navbar {
+		vertical-align: middle;
+		border-style: none;
+		width: 250px;
+		transition: 500ms;
 	}
 }
 
@@ -161,7 +193,8 @@
 		font-size: 1rem;
 		font-weight: 400;
 		font-style: italic;
-		font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+			sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 		margin-bottom: 4rem;
 	}
 
