@@ -1,9 +1,7 @@
-/* Style the navbar links */
-/* Style the logo */
-/* Links on mouse-over */
-/* Style the active/current link */
-/* Display some links to the right */
-/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+* {
+  box-sizing: content-box;
+}
+
 #mainNav {
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -50,19 +48,13 @@
   background-position: center center;
   background-size: cover;
   text-align: center;
-  padding-top: 24rem;
+  padding-top: 31rem;
   padding-bottom: 12.5rem;
-  color: #d10c0c;
+  color: #f3f730;
+  font-family: BVahidBold, "BVahidBold", tahoma;
 }
 
 .header1 #welcom-msg {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-}
-
-.header1 #Nice-msg {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -70,13 +62,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header1 #wecom-msg {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-  .header1 #Nice-msg {
+  .header1 #welcom-msg {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
@@ -96,6 +82,10 @@
 
 .page-section .text-center {
   text-align: center !important;
+}
+
+.page-section .text-rtl {
+  direction: rtl !important;
 }
 
 .page-section h2.section-heading {
@@ -124,4 +114,17 @@
 
 .page-section .text-muted {
   color: #6c757d !important;
+}
+
+.page-section .step-image {
+  float: right;
+  margin: 0 10%;
+}
+
+.page-section .float-r {
+  text-align: right;
+}
+
+.bg-dark-color {
+  background-color: #51ada7;
 }
