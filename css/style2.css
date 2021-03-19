@@ -30,6 +30,18 @@
   transition: 500ms;
 }
 
+@media screen and (max-width: 991.98px) {
+  #mainNav .smal-menu {
+    text-align: center;
+  }
+}
+
+#mainNav #signin-btn .btn-primary {
+  background-color: #8ce633;
+  color: black;
+  border: #8ce633;
+}
+
 .header-image {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -42,7 +54,6 @@
 
 .header1 {
   height: 100%;
-  background-image: url(/asset/img/header-img.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -121,10 +132,33 @@
   margin: 0 10%;
 }
 
+@media screen and (max-width: 690px) {
+  .page-section .step-image {
+    padding-left: 50%;
+    margin-left: -64px;
+    float: none;
+  }
+}
+
 .page-section .float-r {
   text-align: right;
 }
 
+@media screen and (max-width: 690px) {
+  .page-section .float-r {
+    text-align: center;
+  }
+}
+
 .bg-dark-color {
   background-color: #51ada7;
+}
+
+.t-inf {
+  text-align: center;
+}
+
+#contact {
+  background-color: lightblue;
+  text-align: center;
 }
